@@ -1,2 +1,2 @@
-# Kaggle_Days_Delhi
-Website for Kaggle Days Delhi
+# kaggledelhi.github.io
+Official Website of Kaggle Days Meetup Delhi NCR Group
