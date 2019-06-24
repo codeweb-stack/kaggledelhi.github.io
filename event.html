@@ -37,28 +37,22 @@
 <div id="eventbrite-widget-container-64155325305"></div>
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
 <script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
 
-   var exampleCallback = function() {
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '64155325305',
+        iframeContainerId: 'eventbrite-widget-container-64155325305',
 
-       console.log('Order complete!');
-
-   };    window.EBWidgets.createWidget({
-
-       // Required
-
-       widgetType: 'checkout',
-
-       eventId: '62255052538',
-
-       iframeContainerId: 'eventbrite-widget-container-64155325305',        // Optional
-
-       iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-
-       onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-
-   });
-
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
 </script>
 	<div class="community-partners">
         <p>For any queries related to Meetup Registration, contact<a href="https://ayonroy.ml/contact" target="_blank"> Ayon Roy</a> .</p>
